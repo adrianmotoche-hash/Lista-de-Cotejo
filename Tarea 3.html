@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cotejo - Trabajo Colaborativo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .header-info div {
+            display: flex;
+            align-items: flex-end;
+        }
+        .header-info input {
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            width: 250px;
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px 12px;
+        }
+        th {
+            text-align: center;
+            font-weight: bold;
+        }
+        .col-criterios {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .col-puntos {
+            width: 70px;
+            text-align: center;
+            font-size: 14px;
+        }
+        td input[type="radio"] {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+        .observaciones-container {
+            margin-top: 20px;
+        }
+        .observaciones-container label {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .lineas {
+            margin-top: 10px;
+            border-bottom: 1px solid black;
+            height: 25px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>LISTA DE COTEJO DE TRABAJO COLABORATIVO</h2>
+
+    <div class="header-info">
+        <div>
+            <label>NOMBRE:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>CURSO:</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="col-criterios">Criterios</th>
+                <th class="col-puntos">3 puntos</th>
+                <th class="col-puntos">2 puntos</th>
+                <th class="col-puntos">1 punto</th>
+            </tr>
+            <tr>
+                <th class="col-puntos">Siempre</th>
+                <th class="col-puntos">A veces</th>
+                <th class="col-puntos">Nunca</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fila 1 -->
+            <tr>
+                <td>Escucha activamente y respeta las ideas de los demás integrantes.</td>
+                <td align="center"><input type="radio" name="item1"></td>
+                <td align="center"><input type="radio" name="item1"></td>
+                <td align="center"><input type="radio" name="item1"></td>
+            </tr>
+            <!-- Fila 2 -->
+            <tr>
+                <td>Expresa sus opiniones de manera clara, asertiva y constructiva.</td>
+                <td align="center"><input type="radio" name="item2"></td>
+                <td align="center"><input type="radio" name="item2"></td>
+                <td align="center"><input type="radio" name="item2"></td>
+            </tr>
+            <!-- Fila 3 -->
+            <tr>
+                <td>Mantiene una comunicación fluida utilizando los canales acordados.</td>
+                <td align="center"><input type="radio" name="item3"></td>
+                <td align="center"><input type="radio" name="item3"></td>
+                <td align="center"><input type="radio" name="item3"></td>
+            </tr>
+            <!-- Fila 4 -->
+            <tr>
+                <td>Cumple puntualmente con las tareas y subactividades asignadas.</td>
+                <td align="center"><input type="radio" name="item4"></td>
+                <td align="center"><input type="radio" name="item4"></td>
+                <td align="center"><input type="radio" name="item4"></td>
+            </tr>
+            <!-- Fila 5 -->
+            <tr>
+                <td>Muestra iniciativa aportando soluciones y contenido de valor.</td>
+                <td align="center"><input type="radio" name="item5"></td>
+                <td align="center"><input type="radio" name="item5"></td>
+                <td align="center"><input type="radio" name="item5"></td>
+            </tr>
+            <!-- Fila 6 -->
+            <tr>
+                <td>Asiste y participa activamente en las reuniones o sesiones.</td>
+                <td align="center"><input type="radio" name="item6"></td>
+                <td align="center"><input type="radio" name="item6"></td>
+                <td align="center"><input type="radio" name="item6"></td>
+            </tr>
+            <!-- Fila 7 -->
+            <tr>
+                <td>Respeta los plazos de entrega establecidos por el equipo.</td>
+                <td align="center"><input type="radio" name="item7"></td>
+                <td align="center"><input type="radio" name="item7"></td>
+                <td align="center"><input type="radio" name="item7"></td>
+            </tr>
+            <!-- Fila 8 -->
+            <tr>
+                <td>Utiliza correctamente las herramientas digitales compartidas.</td>
+                <td align="center"><input type="radio" name="item8"></td>
+                <td align="center"><input type="radio" name="item8"></td>
+                <td align="center"><input type="radio" name="item8"></td>
+            </tr>
+            <!-- Fila 9 -->
+            <tr>
+                <td>Muestra disposición para apoyar a los compañeros con dificultades.</td>
+                <td align="center"><input type="radio" name="item9"></td>
+                <td align="center"><input type="radio" name="item9"></td>
+                <td align="center"><input type="radio" name="item9"></td>
+            </tr>
+            <!-- Fila 10 -->
+            <tr>
+                <td>Recibe críticas constructivas y se adapta a los consensos del grupo.</td>
+                <td align="center"><input type="radio" name="item10"></td>
+                <td align="center"><input type="radio" name="item10"></td>
+                <td align="center"><input type="radio" name="item10"></td>
+            </tr>
+            <!-- Fila 11 (Nueva) -->
+            <tr>
+                <td>Participa activamente en la resolución pacífica de conflictos internos.</td>
+                <td align="center"><input type="radio" name="item11"></td>
+                <td align="center"><input type="radio" name="item11"></td>
+                <td align="center"><input type="radio" name="item11"></td>
+            </tr>
+            <!-- Fila 12 (Nueva) -->
+            <tr>
+                <td>Mantiene una actitud positiva y motivadora hacia el logro de las metas comunes.</td>
+                <td align="center"><input type="radio" name="item12"></td>
+                <td align="center"><input type="radio" name="item12"></td>
+                <td align="center"><input type="radio" name="item12"></td>
+            </tr>
+            <!-- Fila 13 (Nueva) -->
+            <tr>
+                <td>Demuestra honestidad académica en la elaboración de sus aportes individuales.</td>
+                <td align="center"><input type="radio" name="item13"></td>
+                <td align="center"><input type="radio" name="item13"></td>
+                <td align="center"><input type="radio" name="item13"></td>
+            </tr>
+            <!-- Fila 14 (Nueva) -->
+            <tr>
+                <td>Promueve la equidad en la distribución del trabajo evitando sobrecargar a otros.</td>
+                <td align="center"><input type="radio" name="item14"></td>
+                <td align="center"><input type="radio" name="item14"></td>
+                <td align="center"><input type="radio" name="item14"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="observaciones-container">
+        <label>Observaciones:</label>
+        <div class="lineas"></div>
+        <div class="lineas"></div>
+        <div class="lineas"></div>
+    </div>
+</div>
+
+</body>
+</html>
